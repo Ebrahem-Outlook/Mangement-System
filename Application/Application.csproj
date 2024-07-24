@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Users\Commands\CreateUser\" />
+    <Folder Include="Users\Commands\DeleteUser\" />
+    <Folder Include="Users\Commands\UpdatePassword\" />
+    <Folder Include="Users\Commands\UpdateEmail\" />
+    <Folder Include="Users\Commands\UpdateUser\" />
+    <Folder Include="Users\Events\" />
+    <Folder Include="Users\Queries\GetById\" />
+    <Folder Include="Users\Queries\GetByName\" />
+  </ItemGroup>
+
+</Project>
